@@ -1,8 +1,8 @@
 class BankAccount
   attr_accessor
-  attr_reader
+  attr_reader @name
   
   def initiate(name)
-    
+    @name = name
   end
 end
