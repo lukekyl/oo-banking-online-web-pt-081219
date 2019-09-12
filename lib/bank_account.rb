@@ -7,12 +7,19 @@ class BankAccount
     @balance = 1000
     @status = "open"
   end
+  def display_balance
+    @balance
+  end
   
   def deposit(ammount)
     @balance += ammount
   end
   
-  def display_balance
-    @balance
+  def valid?
+    valid = false
+    if status == "open" && balance > 0
+      valid = true 
+    end
   end
+  
 end
