@@ -1,6 +1,6 @@
 class BankAccount
-  attr_accessor
-  attr_reader :name
+  attr_accessor :name
+  attr_reader 
   
   def initiate(name)
     @name = name
